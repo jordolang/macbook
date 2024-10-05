@@ -119,7 +119,8 @@ e_process "Installing ruby & gem files"
 # Check for rbenv
 if type_exists 'rbenv'; then
     # Install Ruby
-    run_ruby
+    sudo rbenv install 2.3.3
+    sudo rbenv global 2.3.3
 else
     printf "\n"
     e_error "Error: rbenv not found."
