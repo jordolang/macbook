@@ -2,7 +2,7 @@
 
 export MACBOOK="${HOME}/.macbook"
 export MACBOOK_LOG="${HOME}/Library/Logs/macbook.log"
-export GITHUB_USER="jodybrewster"
+export GITHUB_USER="jordolang"
 
 # If missing, download and extract the macbook repository
 if [[ ! -d "${MACBOOK}" ]]; then
@@ -226,15 +226,15 @@ fi
 e_process "git config"
 
 # git configuration
-git config --global user.name "Jody Brewster"
-git config --global user.email "jodybrewster@gmail.com"
+git config --global user.name "Jordan Lang”
+git config --global user.email “jordolang@hotmail.com"
 git config --global push.default current
 git config --global core.safecrlf false
 git config --global merge.keepBackup false;
 
 
 
-ssh-keygen -t rsa -C "jodybrewster@gmail.com"
+ssh-keygen -t rsa -C “jordolang@hotmail.com"
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_rsa
 pbcopy < ~/.ssh/id_rsa.pub
