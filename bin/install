@@ -87,11 +87,11 @@ fi
 #  |_|                                                  
 
 if ! -d "${HOME}/.zprezto"; then
-e_process "Installing prezto"
-
-/usr/bin/zsh <<'EOF'
-#Install prezto
-git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
+    e_process "Installing prezto"
+    /usr/local/bin/zsh <<'EOF'  # Update this line to the correct Zsh path
+    # Install prezto
+    git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
+fi
 
 setopt EXTENDED_GLOB
 for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
