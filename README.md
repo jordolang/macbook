@@ -7,5 +7,5 @@ Macbook is a script to set up a Mac OS X laptop ready for development.
 run the script:
 
 ```bash
-$ bash -c "$(curl -fsSL raw.github.com/jodybrewster/macbook/master/bin/install)"
+$ bash -c "$(curl -fsSL raw.github.com/jordolang/macbook/master/bin/install)"
 ```
